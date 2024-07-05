@@ -10,9 +10,12 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center gap-3 w-full">
-        <div className="w-full bg-sky-700 text-white text-lg font-medium py-2.5 rounded-md text-center hover:bg-sky-600 transition-colors cursor-pointer">
+        <Link
+          href="/register"
+          className="w-full bg-sky-700 text-white text-lg font-medium py-2.5 rounded-md text-center hover:bg-sky-600 transition-colors cursor-pointer"
+        >
           등록하기
-        </div>
+        </Link>
         <div className="flex gap-2">
           <div>이미 등록한 사람</div>
           <Link href={"/login"} className="hover:underline">
