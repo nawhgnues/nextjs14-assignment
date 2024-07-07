@@ -11,7 +11,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center gap-3 w-full">
         <Link
-          href="/register"
+          href="/create-account"
           className="w-full bg-sky-700 text-white text-lg font-medium py-2.5 rounded-md text-center hover:bg-sky-600 transition-colors cursor-pointer"
         >
           등록하기
