@@ -3,29 +3,21 @@ import { PrismaClient } from "@prisma/client";
 const db = new PrismaClient();
 
 async function test() {
-  const token = await db.sMSToken.create({
+  const like = await db.like.create({
     data: {
-      tokne: "2121212",
+      like: false,
       user: {
+        connect: {
+          id: 1,
+        },
+      },
+      tweet: {
         connect: {
           id: 1,
         },
       },
     },
   });
-  console.log(token);
+  console.log(like);
 }
 test();
-// async function test() {
-//   const user = await db.user.findMany({
-//     where: {
-//       usename: {
-//         contains: "est",
-//       },
-//     },
-//   });
-//   console.log(user);
-// }
-
-// test();
-export default db;
