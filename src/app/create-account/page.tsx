@@ -45,16 +45,6 @@ export default function CreateAccount() {
 
         <p className="text-red-600 bg-slate-600 p-3 w-full">{state?.fieldErrors.confirm_password}</p>
         <FormButton />
-
-        {/* {state !== null && (
-          <div className="w-full flex flex-col justify-start items-start gap-2 bg-cyan-950 p-3 rounded-lg">
-            {state ? (
-              <div className="text-green-600 text-sm">로그인되었습니다!</div>
-            ) : (
-              <div className="text-red-500 text-sm">비밀번호를 확인해주세요!</div>
-            )}
-          </div>
-        )} */}
       </form>
     </div>
   );
